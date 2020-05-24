@@ -1,0 +1,80 @@
+﻿
+    <CENTER>
+        <div class="w-auto p-xl-4 " style="background-color:red;">.</div>
+        <img src="~/Content/img/port.jpg" height="300" width="1262" />
+        
+    </CENTER>
+<head>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index","Home")">CAFÉ LOVE<i class="fa fa-coffee"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbar-item"
+                <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResposive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Register","Account")"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login","Account")"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<div class="float-left">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3364.587174779917!2d-116.96840908544203!3d32.510461304837214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fb24e1a1c3d371%3A0x29b93a734f009975!2sCaf%C3%A9%20Love!5e0!3m2!1ses!2smx!4v1589949360728!5m2!1ses!2smx" width="1025" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<body>
+    <div class="float-right">
+    <font color="black"></font>
+    <form action="/action_page.php">
+        <div class="topbar-divider">
+            <h3 class="bg-gradient-danger verde">SUGERENCIAS<i class="fa fa-box-open"></i></h3>
+        </div>
+        <div class="input-container">
+
+            <input class="input-field" type="text" placeholder="Nombre" name="usrnm">
+            <i class="fa fa-user icon"></i>
+        </div>
+
+        <div class="input-container">
+
+            <input class="input-field" type="text" placeholder="Correo electrónico" name="email">
+            <i class="fa fa-envelope icon"></i>
+        </div>
+
+        <div class="input-container">
+
+            <input class="input-field" type="text" placeholder="Queja y/o sugerencia" name="psw">
+            <i class="fa fa-box-open"></i>
+        </div>
+        <div class=" input-container">
+
+        </div>
+        <div>
+            
+            <select id="country" name="Sucursal">
+
+                <option value="Rio Tijuana">Sucursal</option>
+                <option value="Rio Tijuana">Rio Tijuana</option>
+                <option value="Plaza alameda">Plaza Alameda</option>
+                <option value="Playas de Tijuana">Playas de Tijuana</option>
+
+            </select>
+            <i class="fa fa-store"></i>
+            <div>
+                <a href="@Url.Action("Index","Home")" class="btn btn-outline-dark">Enviar</a>
+                
+            </div>
+        </div>
+        </div>
+    
+</body>
+
+
